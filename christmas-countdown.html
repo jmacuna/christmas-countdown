@@ -1119,7 +1119,8 @@ $(function () {
 
 
   $('.countdown').countdown({
-    until: new Date('Dec, 25, 2024');
+    //until: new Date('Dec, 25, 2024');
+    until: new Date('Dec, 25, ' + new Date().getFullYear().toString().slice(2))
   });
   $('.snow').snow({
     amount: 100 //Number of particles
